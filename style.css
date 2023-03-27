@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+    padding: 5%;
+    color: black;
+    font-weight: 2000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #1091c0;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gif{
+    padding: 50px 50px 100px 300px ;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+
+.title-img{
+    position:static;
+  }
+
+.box{
+  width: 125px;
+  height: 125px;
+  border: 2px solid #eccc68;
+  box-shadow: 0 0 0 2px #eccc68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+}
+.cen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+}
+
+td{
+    align-content: right;
+}
+#status{
+  padding: 20px 115px 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+button{
+  
+  font-size: 18px;
+  color:white;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 3px;
+  padding: 20px 158px 20px;
+
+}
+
+.win{
+    animation: winAnimation ease-in-out 1s infinite;
+}
+
+@keyframes winAnimation {
+  0%{background-color: #2c3a47;}
+  100%{background-color: #0df505;}
+  
+}
