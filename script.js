@@ -31,7 +31,11 @@ function init(){
 
 function boxClick(){
   const index=this.dataset.index;
-  if(options[index]!="" || !running){
+  if( !running){
+    return;
+  }
+  if (options[index]!=""){
+    alert("That cell is filled select another one!!");
     return;
   }
   updateBox(this,index);
@@ -76,7 +80,6 @@ function checkWinner(){
   }else{
     changePlayer();
   }
-
 }
 
 function restartGame(){
